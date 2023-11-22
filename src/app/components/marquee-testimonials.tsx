@@ -3,7 +3,7 @@ import Marquee from './ui/marquee'
 
 function MarqueeTestimonials () {
   return (
-    <div className='h-[300px] bg-protop-lavander pt-[120px] pb-[60px]'>
+    <div className='bg-protop-lavander pt-[120px] pb-[60px]'>
       <Marquee>
         {Array.from({ length: 5 }).map((_, i) => (
           <li key={i} className='flex items-center h-full'>

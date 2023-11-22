@@ -3,7 +3,7 @@ import Marquee from './ui/marquee'
 
 function MarqueeMision () {
   return (
-    <div className='h-[300px] bg-protop-light-blue pt-[120px] pb-[60px]'>
+    <div className='bg-protop-light-blue pt-[120px] pb-[60px]'>
       <Marquee>
         {Array.from({ length: 5 }).map((_, i) => (
           <li key={i} className='inline-flex items-center h-full'>
