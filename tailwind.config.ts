@@ -7,6 +7,24 @@ const config: Config = {
     './src/app/**/*.{js,ts,jsx,tsx,mdx}'
   ],
   theme: {
+    screens: {
+      sm: '390px',
+      'sm-2': '600px',
+      md: '810px',
+      lg: '1080px',
+      xl: '1500px',
+      '2xl': '100%'
+    },
+    container: {
+      center: true,
+      screens: {
+        sm: '100%',
+        md: '100%',
+        lg: '100%',
+        xl: '100%',
+        '2xl': '2000px'
+      }
+    },
     extend: {
       colors: {
         protop: {
