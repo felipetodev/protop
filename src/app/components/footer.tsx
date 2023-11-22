@@ -1,6 +1,6 @@
 import { Button } from './ui/button'
 import { FacebookIcon, InstagramIcon, LinkedInIcon } from './ui/icons'
-import { Layout } from './ui/layout'
+import { Layout } from './ui/layout-wrapper'
 
 function Footer () {
   return (

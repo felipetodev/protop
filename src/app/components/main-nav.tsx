@@ -1,5 +1,5 @@
 import { Button } from './ui/button'
-import { Layout } from './ui/layout'
+import { Layout } from './ui/layout-wrapper'
 
 function MainNav () {
   return (
