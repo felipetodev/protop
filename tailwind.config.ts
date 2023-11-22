@@ -29,6 +29,7 @@ const config: Config = {
       colors: {
         protop: {
           'light-blue': '#0066FF',
+          tang: '#003F9C',
           space: '#16172E',
           lavander: '#C9D2E4',
           seasalt: '#F7F7F7'

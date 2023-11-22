@@ -8,10 +8,11 @@ const buttonVariants = cva(
     variants: {
       variant: {
         default: 'bg-protop-light-blue hover:bg-protop-light-blue/50',
-        secondary: '' // TODO
+        secondary: 'bg-protop-lavander/10 hover:bg-protop-lavander/50'
       },
       size: {
-        default: 'px-[30px] py-2 h-10'
+        default: 'px-[30px] py-2 h-10',
+        secondary: 'h-16 px-[30px]'
       }
     },
     defaultVariants: {
@@ -30,7 +31,7 @@ export interface ButtonProps
 const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
   ({ className, variant, size, asChild = false, children, ...props }, ref) => {
     return (
-      <button className={cn('', buttonVariants({ variant, size, className }))} ref={ref} {...props}>
+      <button className={cn(buttonVariants({ variant, size, className }))} ref={ref} {...props}>
         {children}
       </button>
     )

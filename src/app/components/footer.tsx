@@ -16,31 +16,33 @@ function Footer () {
               </div>
               <div className='flex flex-col gap-y-[30px] sm-2:gap-y-0 sm-2:flex-row gap-x-[60px]'>
                 <div className='flex flex-col gap-y-[24px]'>
-                  <span>Inicio</span>
-                  <span className='min-w-max'>Acerca de</span>
+                  <a href='' className='transition-colors hover:text-protop-light-blue'>Inicio</a>
+                  <a href='' className='transition-colors hover:text-protop-light-blue min-w-max'>
+                    Acerca de
+                  </a>
                 </div>
                 <div className='flex flex-col gap-y-[24px]'>
-                  <span>Servicios</span>
-                  <span>Testimonios</span>
+                  <a href='' className='transition-colors hover:text-protop-light-blue'>Servicios</a>
+                  <a href='' className='transition-colors hover:text-protop-light-blue'>Testimonios</a>
                 </div>
               </div>
             </div>
 
             <div className='flex flex-col items-center sm-2:items-start gap-y-[30px] sm-2:gap-y-0 sm-2:flex-row gap-x-[60px] text-center sm-2:text-start'>
               <ul className='flex gap-x-[30px]'>
-                <li>
+                <li className='group'>
                   <a href="">
-                    <InstagramIcon />
+                    <InstagramIcon className='transition-colors group-hover:text-protop-light-blue' />
                   </a>
                 </li>
-                <li>
+                <li className='group'>
                   <a href="">
-                    <LinkedInIcon />
+                    <LinkedInIcon className='transition-colors group-hover:text-protop-light-blue' />
                   </a>
                 </li>
-                <li>
+                <li className='group'>
                   <a href="">
-                    <FacebookIcon />
+                    <FacebookIcon className='transition-colors group-hover:text-protop-light-blue' />
                   </a>
                 </li>
               </ul>
@@ -62,7 +64,7 @@ function Footer () {
           © 2023 Nicolas Protopsaltis Abogado penalista.
         </p>
         <p>
-          Diseño y programación <span className='text-protop-light-blue'>Sebastian Hanson Studio</span>
+          Diseño y programación <a href='#' className='text-protop-light-blue hover:underline'>Sebastian Hanson Studio</a>
         </p>
       </div>
     </>

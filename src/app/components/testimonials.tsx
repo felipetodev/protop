@@ -1,6 +1,6 @@
 function Testimonials () {
   return (
-    <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 auto-rows-[390px] md:auto-rows-[405px] lg:auto-rows-[540px] xl:auto-rows-auto text-protop-space">
+    <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 auto-rows-[390px] md:auto-rows-[405px] lg:auto-rows-[540px] xl:auto-rows-[375px] text-protop-space">
       <div className="bg-protop-lavander p-5 md:p-10">
         <div className="flex space-x-2">
           <div className="w-8 h-8 rounded-full bg-protop-space" />

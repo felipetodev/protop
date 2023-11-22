@@ -39,6 +39,20 @@ function NicoSymbol ({ className, ...props }: React.ComponentProps<'svg'>) {
   )
 }
 
+function NicoSymbolBlue ({ className, ...props }: React.ComponentProps<'svg'>) {
+  return (
+    <svg className={className} width="100" height="99" viewBox="0 0 100 99" fill="none" {...props}>
+      <path d="M75.8826 59.1396L99.7118 82.7871C99.9577 83.0312 99.9577 83.4217 99.7118 83.6413L84.4404 98.7962C84.1945 99.0402 83.801 99.0402 83.5797 98.7962L28.298 43.9359C27.9045 43.5455 27.2406 43.8139 27.2406 44.3752V94.0862C27.2406 94.4279 26.97 94.6963 26.6258 94.6963H0.952217C0.657119 94.6963 0.411204 94.5011 0.362021 94.2326L0.0177393 92.7928C-0.0314437 92.5732 0.0177393 92.3535 0.214471 92.2071C1.17354 91.353 4.44421 88.2292 4.44421 84.9591V50.0857C4.44421 49.7441 4.71472 49.4756 5.059 49.4756H8.94446C17.3056 49.4756 21.855 45.2537 24.3388 40.5926C24.4617 40.3485 24.4125 40.0557 24.2158 39.8849L0.337429 16.2129C0.0915139 15.9689 0.0915139 15.5784 0.337429 15.3588L15.6088 0.203904C15.8547 -0.040136 16.2481 -0.040136 16.4695 0.203904L71.7758 55.0886C72.1693 55.479 72.8332 55.2106 72.8332 54.6493V4.86507C72.8332 4.52342 73.1037 4.25497 73.448 4.25497H99.0478C99.3429 4.25497 99.5888 4.45021 99.638 4.71865L99.9823 6.2317C100.031 6.45134 99.9823 6.67097 99.7855 6.8174C98.8019 7.67154 95.5804 10.722 95.5804 14.0654V48.8655C95.5804 49.2072 95.3099 49.4756 94.9656 49.4756H91.1785C82.8174 49.4756 78.268 53.7708 75.7842 58.4319C75.6613 58.676 75.7104 58.9688 75.9072 59.1396H75.8826Z" fill="url(#paint0_linear_41_2510)" />
+      <defs>
+        <linearGradient id="paint0_linear_41_2510" x1="50" y1="0.020874" x2="50" y2="98.9792" gradientUnits="userSpaceOnUse">
+          <stop stopColor="#003F9C" />
+          <stop offset="1" stopColor="#003F9C" stopOpacity="0" />
+        </linearGradient>
+      </defs>
+    </svg>
+  )
+}
+
 function PinIcon ({ className, ...props }: React.ComponentProps<'svg'>) {
   return (
     <svg className={className} width="19" height="23" viewBox="0 0 19 23" fill="none" {...props}>
@@ -89,7 +103,7 @@ function PhoneIcon ({ className, ...props }: React.ComponentProps<'svg'>) {
 
 function InstagramIcon ({ className, ...props }: React.ComponentProps<'svg'>) {
   return (
-    <svg className={className} width="26" height="26" viewBox="0 0 26 26" fill="none" {...props}>
+    <svg className={className} width="26" height="26" viewBox="0 0 26 26" fill="currentColor" {...props}>
       <path d="M8.04993 0.28418C4.03043 0.28418 0.759888 3.55665 0.759888 7.57715V17.9932C0.759888 22.0132 4.03236 25.2842 8.05286 25.2842H18.4689C22.4889 25.2842 25.7599 22.0117 25.7599 17.9912V7.57422C25.7599 3.55472 22.4874 0.28418 18.4669 0.28418H8.04993ZM20.7599 4.28418C21.3119 4.28418 21.7599 4.73218 21.7599 5.28418C21.7599 5.83618 21.3119 6.28418 20.7599 6.28418C20.2079 6.28418 19.7599 5.83618 19.7599 5.28418C19.7599 4.73218 20.2079 4.28418 20.7599 4.28418ZM13.2599 6.28418C16.8449 6.28418 19.7599 9.19918 19.7599 12.7842C19.7599 16.3692 16.8444 19.2842 13.2599 19.2842C9.67489 19.2842 6.75989 16.3687 6.75989 12.7842C6.75989 9.19968 9.67489 6.28418 13.2599 6.28418ZM13.2599 8.28418C10.7744 8.28418 8.75989 10.2987 8.75989 12.7842C8.75989 15.2697 10.7744 17.2842 13.2599 17.2842C15.7454 17.2842 17.7599 15.2697 17.7599 12.7842C17.7599 10.2987 15.7454 8.28418 13.2599 8.28418Z" fill="currentColor" />
     </svg>
 
@@ -113,6 +127,68 @@ function FacebookIcon ({ className, ...props }: React.ComponentProps<'svg'>) {
   )
 }
 
+function CrossHairIcon ({ className, ...props }: React.ComponentProps<'svg'>) {
+  return (
+    <svg className={className} width="28" height="28" viewBox="0 0 28 28" fill="none" {...props}>
+      <g id="&#240;&#159;&#166;&#134; icon &#34;crosshair&#34;">
+        <path id="Vector" d="M14 26.5C20.9036 26.5 26.5 20.9036 26.5 14C26.5 7.09644 20.9036 1.5 14 1.5C7.09644 1.5 1.5 7.09644 1.5 14C1.5 20.9036 7.09644 26.5 14 26.5Z" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+        <path id="Vector_2" d="M26.5 14H21.5" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+        <path id="Vector_3" d="M6.5 14H1.5" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+        <path id="Vector_4" d="M14 6.5V1.5" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+        <path id="Vector_5" d="M14 26.5V21.5" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+      </g>
+    </svg>
+
+  )
+}
+
+function UserCheckIcon ({ className, ...props }: React.ComponentProps<'svg'>) {
+  return (
+    <svg className={className} width="34" height="27" viewBox="0 0 34 27" fill="none" {...props}>
+      <g id="&#240;&#159;&#166;&#134; icon &#34;user check&#34;">
+        <path id="Vector" d="M22.5556 26V23.2222C22.5556 21.7488 21.9702 20.3357 20.9284 19.2938C19.8865 18.2519 18.4734 17.6666 17 17.6666H7.27778C5.80436 17.6666 4.39128 18.2519 3.34941 19.2938C2.30754 20.3357 1.72223 21.7488 1.72223 23.2222V26" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+        <path id="Vector_2" d="M12.1389 12.1111C15.2071 12.1111 17.6945 9.6238 17.6945 6.55556C17.6945 3.48731 15.2071 1 12.1389 1C9.07065 1 6.58334 3.48731 6.58334 6.55556C6.58334 9.6238 9.07065 12.1111 12.1389 12.1111Z" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+        <path id="Vector_3" d="M23.9445 12.1112L26.7222 14.8889L32.2778 9.33337" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+      </g>
+    </svg>
+
+  )
+}
+
+function GifIcon ({ className, ...props }: React.ComponentProps<'svg'>) {
+  return (
+    <svg className={className} width="28" height="27" viewBox="0 0 28 27" fill="none" {...props}>
+      <path d="M24 13.5V26H4V13.5" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+      <path d="M26.5 7.25H1.5V13.5H26.5V7.25Z" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+      <path d="M14 26V7.25" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+      <path d="M14 7.25H8.375C7.5462 7.25 6.75134 6.92076 6.16529 6.33471C5.57924 5.74866 5.25 4.9538 5.25 4.125C5.25 3.2962 5.57924 2.50134 6.16529 1.91529C6.75134 1.32924 7.5462 1 8.375 1C12.75 1 14 7.25 14 7.25Z" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+      <path d="M14 7.25H19.625C20.4538 7.25 21.2487 6.92076 21.8347 6.33471C22.4208 5.74866 22.75 4.9538 22.75 4.125C22.75 3.2962 22.4208 2.50134 21.8347 1.91529C21.2487 1.32924 20.4538 1 19.625 1C15.25 1 14 7.25 14 7.25Z" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+    </svg>
+  )
+}
+
+function ArrowDownIcon ({ className, ...props }: React.ComponentProps<'svg'>) {
+  return (
+    <svg className={className} width="30" height="31" viewBox="0 0 30 31" fill="none" {...props}>
+      <g id="&#240;&#159;&#166;&#134; icon &#34;arrow up right&#34;">
+        <path id="Vector" d="M15 0.999954V29.2842" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+        <path id="Vector_2" d="M29.1421 15.1421L15 29.2842L0.85785 15.1421" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+      </g>
+    </svg>
+
+  )
+}
+
+function BookOpenIcon ({ className, ...props }: React.ComponentProps<'svg'>) {
+  return (
+    <svg className={className} width="30" height="27" viewBox="0 0 30 27" fill="none" {...props}>
+      <path d="M1 1H9.33333C10.8068 1 12.2198 1.58532 13.2617 2.62718C14.3036 3.66905 14.8889 5.08213 14.8889 6.55556V26C14.8889 24.8949 14.4499 23.8351 13.6685 23.0537C12.8871 22.2723 11.8273 21.8333 10.7222 21.8333H1V1Z" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+      <path d="M28.7778 1H20.4444C18.971 1 17.5579 1.58532 16.5161 2.62718C15.4742 3.66905 14.8889 5.08213 14.8889 6.55556V26C14.8889 24.8949 15.3279 23.8351 16.1093 23.0537C16.8907 22.2723 17.9505 21.8333 19.0556 21.8333H28.7778V1Z" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+    </svg>
+
+  )
+}
+
 export {
   NicolasVector,
   PinIcon,
@@ -121,7 +197,13 @@ export {
   InboxIcon,
   PhoneIcon,
   NicoSymbol,
+  NicoSymbolBlue,
   InstagramIcon,
   LinkedInIcon,
-  FacebookIcon
+  FacebookIcon,
+  CrossHairIcon,
+  UserCheckIcon,
+  GifIcon,
+  ArrowDownIcon,
+  BookOpenIcon
 }
