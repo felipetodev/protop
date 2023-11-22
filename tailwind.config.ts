@@ -38,6 +38,15 @@ const config: Config = {
       backgroundImage: {
         'blue-gradient': 'linear-gradient(180deg, #0066FF 0%, #015FEA 100%)',
         'gray-gradient': 'linear-gradient(180deg, #C9D2E4 0%, #F7F7F7 100%)'
+      },
+      animation: {
+        'infinite-scroll': 'infinite-scroll 120s linear infinite',
+        'infinite-scroll-reverse': 'infinite-scroll 120s linear infinite reverse'
+      },
+      keyframes: {
+        'infinite-scroll': {
+          to: { transform: 'translate(calc(-50% - 2.5rem))' }
+        }
       }
     }
   },
