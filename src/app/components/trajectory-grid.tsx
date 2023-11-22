@@ -14,7 +14,7 @@ function TrajectoryGrid () {
           </span>
         </p>
       </div>
-      <div className="row-start-2 sm-2:row-start-1 col-start-2 sm-2:col-start-3 md:col-start-4 bg-protop-lavander p-5 sm-2:p-10">
+      <div className="row-start-2 sm-2:row-start-1 col-start-2 sm-2:col-start-3 md:col-start-4 bg-[#C3CCE0] p-5 sm-2:p-10">
         <BookOpenIcon className="text-protop-light-blue" />
         <p className='text-protop-space mt-5'>Diplomado en derechos humanos en el{' '}
           <span className='font-medium'>
@@ -38,7 +38,7 @@ function TrajectoryGrid () {
           </svg>
         </div>
       </div>
-      <div className="row-start-3 sm-2:row-start-2 col-start-1 sm-2:col-start-2 md:col-start-3 bg-protop-lavander p-5 sm-2:p-10">
+      <div className="row-start-3 sm-2:row-start-2 col-start-1 sm-2:col-start-2 md:col-start-3 bg-[#C3CCE0] p-5 sm-2:p-10">
         <BookOpenIcon className="text-protop-light-blue" />
         <p className='text-protop-space mt-5'>Magíster en derecho penal y constitucional en la{' '}
           <span className='font-medium'>

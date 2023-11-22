@@ -34,6 +34,10 @@ const config: Config = {
           lavander: '#C9D2E4',
           seasalt: '#F7F7F7'
         }
+      },
+      backgroundImage: {
+        'blue-gradient': 'linear-gradient(180deg, #0066FF 0%, #015FEA 100%)',
+        'gray-gradient': 'linear-gradient(180deg, #C9D2E4 0%, #F7F7F7 100%)'
       }
     }
   },

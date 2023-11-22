@@ -13,7 +13,7 @@ function Testimonials () {
           Feugiat vivamus at augue eget. Eget lorem dolor sed viverra ipsum nunc aliquet bibendum. Rhoncus est pellentesque elit ullamcorper dignissim cras tincidunt lobortis feugiat. Consequat interdum varius sit amet mattis vulputate enim nulla.
         </p>
       </div>
-      <div className="bg-protop-seasalt p-5 md:p-10">
+      <div className="bg-gray-gradient p-5 md:p-10">
         <div className="flex space-x-2">
           <div className="w-8 h-8 rounded-full bg-protop-space" />
           <div className="flex flex-col gap-y-1">
@@ -37,7 +37,7 @@ function Testimonials () {
           Cras pulvinar mattis nunc sed. Enim tortor at auctor urna nunc id cursus metus. Turpis massa sed elementum tempus egestas. Est lorem ipsum dolor sit. Amet commodo nulla facilisi nullam vehicula. Tortor vitae purus faucibus ornare suspendisse sed.
         </p>
       </div>
-      <div className="bg-protop-seasalt p-5 md:p-10">
+      <div className="bg-gray-gradient p-5 md:p-10">
         <div className="flex space-x-2">
           <div className="w-8 h-8 rounded-full bg-protop-space" />
           <div className="flex flex-col gap-y-1">

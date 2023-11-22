@@ -30,7 +30,7 @@ function ServicesGrid () {
           Beneficios intra-penitenciarios y eliminación de antecedentes.
         </p>
       </div>
-      <div className="flex flex-col gap-y-5 row-start-4 sm-2:row-start-2 sm-2:col-start-2 lg:col-start-3 xl:col-start-4 bg-protop-lavander p-5 sm-2:p-10">
+      <div className="flex flex-col gap-y-5 row-start-4 sm-2:row-start-2 sm-2:col-start-2 lg:col-start-3 xl:col-start-4 bg-[#C3CCE0] p-5 sm-2:p-10">
         <PlusCircleIcon className="text-protop-light-blue" />
         <h3 className='font-medium text-base text-protop-space'>
           Representación a víctimas de delitos o crímenes.

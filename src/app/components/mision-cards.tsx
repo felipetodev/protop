@@ -12,7 +12,7 @@ function MisionCards () {
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
         </p>
       </div>
-      <div className="flex flex-col gap-y-5 items-center justify-center bg-protop-light-blue p-5 lg:p-10 text-center">
+      <div className="flex flex-col gap-y-5 items-center justify-center bg-blue-gradient p-5 lg:p-10 text-center">
         <UserCheckIcon className='text-protop-space' />
         <h4 className="text-[16px] font-medium">
           Representación personal
