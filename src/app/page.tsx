@@ -1,6 +1,5 @@
 import ServicesGrid from './components/services-grid'
 import Hero from './components/hero'
-import MainNav from './components/main-nav'
 import Contact from './components/contact'
 import MarqueeTestimonials from './components/marquee-testimonials'
 import Testimonials from './components/testimonials'
