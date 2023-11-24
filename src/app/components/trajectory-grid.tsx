@@ -18,7 +18,7 @@ function TrajectoryGrid () {
         <BookOpenIcon className="text-protop-light-blue" />
         <p className='text-protop-space mt-5'>Diplomado en derechos humanos en el{' '}
           <span className='font-medium'>
-            Instituto Judicial..
+            Instituto Judicial.
           </span>
         </p>
       </div>

@@ -16,14 +16,20 @@ function Footer () {
               </div>
               <div className='flex flex-col gap-y-[30px] sm-2:gap-y-0 sm-2:flex-row gap-x-[60px]'>
                 <div className='flex flex-col gap-y-[24px]'>
-                  <a href='' className='transition-colors hover:text-protop-light-blue'>Inicio</a>
-                  <a href='' className='transition-colors hover:text-protop-light-blue min-w-max'>
+                  <a href='#' className='transition-colors hover:text-protop-light-blue'>
+                    Inicio
+                  </a>
+                  <a href='#acerca-de' className='transition-colors hover:text-protop-light-blue min-w-max'>
                     Acerca de
                   </a>
                 </div>
                 <div className='flex flex-col gap-y-[24px]'>
-                  <a href='' className='transition-colors hover:text-protop-light-blue'>Servicios</a>
-                  <a href='' className='transition-colors hover:text-protop-light-blue'>Testimonios</a>
+                  <a href='#servicios' className='transition-colors hover:text-protop-light-blue'>
+                    Servicios
+                  </a>
+                  <a href='#testimonios' className='transition-colors hover:text-protop-light-blue'>
+                    Testimonios
+                  </a>
                 </div>
               </div>
             </div>

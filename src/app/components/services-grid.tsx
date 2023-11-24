@@ -2,7 +2,7 @@ import { ArrowDownRight, PlusCircleIcon } from './ui/icons'
 
 function ServicesGrid () {
   return (
-    <div className="grid grid-cols-1 sm-2:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 auto-rows-[375px] overflow-hidden">
+    <div id='servicios' className="grid grid-cols-1 sm-2:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 auto-rows-[375px] overflow-hidden">
       <div className="col-start-1 col-end-2 lg:col-end-3 xl:col-end-4 row-start-1 row-end-2 lg:row-end-3">
         <img className="block h-full w-full object-cover" src="./lawyers.jpg" alt="lawyers" />
       </div>

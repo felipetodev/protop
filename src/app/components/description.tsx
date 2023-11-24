@@ -3,30 +3,30 @@ import { ArrowDownIcon, FacebookIcon, LinkedInIcon } from './ui/icons'
 
 function Description () {
   return (
-    <div className="px-5 md:px-10 lg:px-[100px] xl:px-[200px] py-[100px] md:py-[200px]">
+    <div id='acerca-de' className="px-5 md:px-10 lg:px-[100px] xl:px-[200px] py-[100px] md:py-[200px]">
       <div className="flex flex-col gap-y-[40px] sm-2:gap-y-[60px]">
-        <div className="flex flex-col gap-y-5 sm-2:gap-y-10 text-base sm-2:text-[25px]">
-          <p>
+        <div className="flex flex-col gap-y-5 sm-2:gap-y-10 text-base sm-2:text-[25px] text-protop-lavander">
+          <p className='leading-tight'>
             En mi rol como representante penal, me enorgullezco de encarnar los valores de honestidad, transparencia, dedicación, estudio, metodología y aplicación.
             {' '}
             <span className="text-protop-light-blue">
               Estas cualidades son fundamentales para entregar el mejor servicio a mis clientes, ya sean imputados o víctimas.
             </span>
           </p>
-          <p>
+          <p className='leading-tight'>
             Mi compromiso es brindar excelencia en cada paso del proceso legal, manteniendo
             {' '}
             <span className="text-protop-light-blue">
               altos estándares de calidad a un precio accesible.
             </span>
           </p>
-          <p>
+          <p className='leading-tight'>
             Un trato digno hacia la persona y sus seres queridos es esencial. Siempre estaré disponible para ofrecer información oportuna y apoyo constante en cada camino legal.
           </p>
         </div>
-        <div className='flex flex-col items-center justify-center gap-y-[10px] text-[25px]'>
+        <div className='flex flex-col items-center justify-center gap-y-[10px]'>
           <ArrowDownIcon className="text-protop-light-blue" />
-          <p className='text-protop-light-blue text-center text-[13px] [text-wrap:balance]'>
+          <p className='text-protop-light-blue text-center [text-wrap:balance] text-base sm-2:text-[25px]'>
             Agenda tu primera consulta gratis y hablemos de tu caso
           </p>
         </div>

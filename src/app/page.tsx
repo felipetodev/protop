@@ -13,19 +13,16 @@ import TrajectoryGrid from './components/trajectory-grid'
 export default function Home () {
   return (
     <>
-      <div className='h-screen overflow-x-hidden'>
-        <MainNav />
-        <Hero />
-        <TrajectoryGrid />
-        <MarqueeMision />
-        <MisionCards />
-        <Description />
-        <ServicesGrid />
-        <Contact />
-        <MarqueeTestimonials />
-        <Testimonials />
-        <Footer />
-      </div>
+      <Hero />
+      <TrajectoryGrid />
+      <MarqueeMision />
+      <MisionCards />
+      <Description />
+      <ServicesGrid />
+      <Contact />
+      <MarqueeTestimonials />
+      <Testimonials />
+      <Footer />
     </>
   )
 }

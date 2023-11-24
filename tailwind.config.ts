@@ -37,7 +37,10 @@ const config: Config = {
       },
       backgroundImage: {
         'blue-gradient': 'linear-gradient(180deg, #0066FF 0%, #015FEA 100%)',
-        'gray-gradient': 'linear-gradient(180deg, #C9D2E4 0%, #F7F7F7 100%)'
+        'blue-grad-reverse': 'linear-gradient(-90deg, #0066FF 0%, #015FEA 100%)',
+        'gray-gradient': 'linear-gradient(180deg, #C9D2E4 0%, #F7F7F7 100%)',
+        'gray-grad-reverse': 'linear-gradient(-90deg, #C9D2E4 0%, #F7F7F7 100%)',
+        'nav-gradient': 'linear-gradient(180deg, rgba(22, 23, 46, 0.50) 0%, rgba(22, 23, 46, 0) 100%)'
       },
       animation: {
         'infinite-scroll': 'infinite-scroll 120s linear infinite',
