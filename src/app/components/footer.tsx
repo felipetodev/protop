@@ -67,10 +67,13 @@ function Footer () {
       </Layout>
       <div className='flex gap-x-4 items-center sm-2:items-start flex-col sm-2:flex-row justify-between bg-[#1C1D3B] px-5 md:px-10 py-[30px] sm-2:py-[60px] text-[9px] sm-2:text-[13px]'>
         <p>
-          © 2023 Nicolas Protopsaltis Abogado penalista.
+          © {new Date().getFullYear()} Nicolas Protopsaltis Abogado penalista.
         </p>
         <p>
-          Diseño y programación <a href='#' className='text-protop-light-blue hover:underline'>Sebastian Hanson Studio</a>
+          Diseño y programación{' '}
+          <a href='https://www.sebastianhansonstudio.com/' aria-label="Diseño y Programación: Sebastian Hanson Studio" target='_blank' className='text-protop-light-blue hover:underline' rel="noreferrer">
+            Sebastian Hanson Studio
+          </a>
         </p>
       </div>
     </>

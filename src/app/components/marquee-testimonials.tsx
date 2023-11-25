@@ -7,7 +7,7 @@ function MarqueeTestimonials () {
       <Marquee>
         {Array.from({ length: 5 }).map((_, i) => (
           <li key={i} className='flex items-center h-full'>
-            <h3 className='w-max text-[120px] font-medium text-protop-seasalt'>
+            <h3 className='w-max text-[120px] font-medium text-protop-space'>
               Testimonios
             </h3>
             <NicoSymbol className='ml-20' />

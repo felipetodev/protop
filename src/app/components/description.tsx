@@ -25,7 +25,7 @@ function Description () {
           </p>
         </div>
         <div className='flex flex-col items-center justify-center gap-y-[10px]'>
-          <ArrowDownIcon className="text-protop-light-blue" />
+          <ArrowDownIcon className="text-protop-light-blue animate-bounce" />
           <p className='text-protop-light-blue text-center [text-wrap:balance] text-base sm-2:text-[25px]'>
             Agenda tu primera consulta gratis y hablemos de tu caso
           </p>

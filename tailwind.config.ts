@@ -43,8 +43,7 @@ const config: Config = {
         'nav-gradient': 'linear-gradient(180deg, rgba(22, 23, 46, 0.50) 0%, rgba(22, 23, 46, 0) 100%)'
       },
       animation: {
-        'infinite-scroll': 'infinite-scroll 120s linear infinite',
-        'infinite-scroll-reverse': 'infinite-scroll 120s linear infinite reverse'
+        'infinite-scroll': 'infinite-scroll 120s linear infinite'
       },
       keyframes: {
         'infinite-scroll': {
@@ -55,4 +54,5 @@ const config: Config = {
   },
   plugins: []
 }
+
 export default config
