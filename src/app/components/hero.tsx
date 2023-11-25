@@ -12,7 +12,7 @@ function Hero () {
         <p className='text-[11px] sm:text-[13px]'>
           Profesional con experiencia y formación especializada en representar a personas en situaciones legales complejas. Con post títulos sólidos y una dedicación profunda, brindo asistencia a aquellos imputados por delitos o crímenes, así como a víctimas y sus familias. Soy tu aliado en cada paso del proceso legal.
         </p>
-        <ul className="flex sm-2:hidden lg:flex gap-x-2 sm-2:gap-x-8 [&_li]:flex [&_li]:items-end text-[11px] sm-2:text-[13px]">
+        <ul className="flex sm-2:hidden lg:flex gap-x-2 sm-2:gap-x-8 [&_li]:flex [&_li]:items-end text-[9px] sm:text-[11px] sm-2:text-[13px]">
           <li className='min-w-max'>
             <PinIcon className="h-4 w-4 sm:h-auto sm:w-auto mr-2 text-protop-light-blue" />
             <span>Coquimbo</span>
