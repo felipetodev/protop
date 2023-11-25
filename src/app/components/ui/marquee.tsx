@@ -1,7 +1,7 @@
 'use client'
 
 import { useEffect, useRef } from 'react'
-import { cn } from '@/app/lib/utils'
+import { cn, devMark } from '@/app/lib/utils'
 
 type Props = {
   className?: string
@@ -14,6 +14,7 @@ function Marquee ({ className, direction = 'left', children }: Props) {
   const listRef = useRef<HTMLUListElement>(null)
 
   useEffect(() => {
+    devMark()
     scrollerRef.current?.setAttribute('data-animated', 'true')
     listRef.current?.setAttribute('data-animated', 'true')
     if (direction === 'right') listRef.current?.setAttribute('data-direction', 'right')
