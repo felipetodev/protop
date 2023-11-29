@@ -31,7 +31,7 @@ function MainNav () {
         </ul>
       </div>
       <div className='flex justify-center items-center ml-10'>
-        <Button>
+        <Button variant='thrid'>
           Contáctame
         </Button>
       </div>

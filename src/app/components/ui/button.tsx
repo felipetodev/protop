@@ -8,7 +8,8 @@ const buttonVariants = cva(
     variants: {
       variant: {
         default: 'bg-protop-light-blue hover:bg-protop-light-blue/50',
-        secondary: 'bg-protop-lavander/10 hover:bg-protop-light-blue'
+        secondary: 'bg-protop-lavander/10 hover:bg-protop-light-blue',
+        thrid: 'bg-protop-light-blue hover:text-protop-space hover:bg-protop-lavander'
       },
       size: {
         default: 'px-[30px] py-2 h-10',
