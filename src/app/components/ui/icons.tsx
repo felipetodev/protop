@@ -1,28 +1,39 @@
-function NicolasVector ({ className, ...props }: React.ComponentProps<'svg'>) {
-  return (
-    <svg
-      className={className}
-      width="752"
-      height="750"
-      viewBox="0 0 752 750"
-      fill="none"
-      {...props}
-    >
-      <path d="M570.119 447.946L748.838 626.725C750.683 628.57 750.683 631.522 748.838 633.182L634.303 747.755C632.459 749.6 629.508 749.6 627.848 747.755L213.235 333.004C210.284 330.052 205.304 332.081 205.304 336.325V712.147C205.304 714.73 203.275 716.76 200.693 716.76H8.14163C5.92839 716.76 4.08403 715.284 3.71515 713.254L1.13304 702.369C0.764172 700.708 1.13304 699.048 2.60854 697.941C9.80156 691.483 34.3316 667.868 34.3316 643.145V379.497C34.3316 376.914 36.3604 374.885 38.9425 374.885H68.0835C130.792 374.885 164.913 342.967 183.541 307.728C184.463 305.883 184.094 303.669 182.618 302.377L3.53072 123.414C1.68635 121.569 1.68635 118.617 3.53072 116.957L118.066 2.38373C119.91 0.538755 122.861 0.538755 124.521 2.38373L539.318 417.32C542.269 420.272 547.249 418.242 547.249 413.999V37.6228C547.249 35.0399 549.278 33.0104 551.86 33.0104H743.858C746.072 33.0104 747.916 34.4864 748.285 36.5158L750.867 47.9547C751.236 49.6152 750.867 51.2757 749.392 52.3827C742.014 58.8401 717.853 81.9023 717.853 107.179V370.273C717.853 372.856 715.824 374.885 713.242 374.885H684.839C622.13 374.885 588.01 407.357 569.382 442.596C568.459 444.441 568.828 446.655 570.304 447.946H570.119Z" stroke="url(#paint0_linear_41_2467)" strokeWidth="0.5" strokeMiterlimit="10" />
-      <defs>
-        <linearGradient id="paint0_linear_41_2467" x1="375.908" y1="-1.30622" x2="375.908" y2="751.445" gradientUnits="userSpaceOnUse">
-          <stop stopColor="#F4F4F4" />
-          <stop offset="0.08" stopColor="#F4F4F4" stopOpacity="0.96" />
-          <stop offset="0.22" stopColor="#F4F4F4" stopOpacity="0.84" />
-          <stop offset="0.4" stopColor="#F4F4F4" stopOpacity="0.65" />
-          <stop offset="0.62" stopColor="#F4F4F4" stopOpacity="0.39" />
-          <stop offset="0.86" stopColor="#F4F4F4" stopOpacity="0.07" />
-          <stop offset="0.91" stopColor="#F4F4F4" stopOpacity="0" />
-        </linearGradient>
-      </defs>
-    </svg>
-  )
+import * as React from 'react'
+
+interface VectorProps
+  extends React.SVGAttributes<SVGSVGElement> {
+  className?: string
 }
+
+const NicolasVector = React.forwardRef<SVGSVGElement, VectorProps>(
+  ({ className, ...props }, ref) => {
+    return (
+      <svg
+        ref={ref}
+        className={className}
+        width="752"
+        height="750"
+        viewBox="0 0 752 750"
+        fill="none"
+        {...props}
+      >
+        <path d="M570.119 447.946L748.838 626.725C750.683 628.57 750.683 631.522 748.838 633.182L634.303 747.755C632.459 749.6 629.508 749.6 627.848 747.755L213.235 333.004C210.284 330.052 205.304 332.081 205.304 336.325V712.147C205.304 714.73 203.275 716.76 200.693 716.76H8.14163C5.92839 716.76 4.08403 715.284 3.71515 713.254L1.13304 702.369C0.764172 700.708 1.13304 699.048 2.60854 697.941C9.80156 691.483 34.3316 667.868 34.3316 643.145V379.497C34.3316 376.914 36.3604 374.885 38.9425 374.885H68.0835C130.792 374.885 164.913 342.967 183.541 307.728C184.463 305.883 184.094 303.669 182.618 302.377L3.53072 123.414C1.68635 121.569 1.68635 118.617 3.53072 116.957L118.066 2.38373C119.91 0.538755 122.861 0.538755 124.521 2.38373L539.318 417.32C542.269 420.272 547.249 418.242 547.249 413.999V37.6228C547.249 35.0399 549.278 33.0104 551.86 33.0104H743.858C746.072 33.0104 747.916 34.4864 748.285 36.5158L750.867 47.9547C751.236 49.6152 750.867 51.2757 749.392 52.3827C742.014 58.8401 717.853 81.9023 717.853 107.179V370.273C717.853 372.856 715.824 374.885 713.242 374.885H684.839C622.13 374.885 588.01 407.357 569.382 442.596C568.459 444.441 568.828 446.655 570.304 447.946H570.119Z" stroke="url(#paint0_linear_41_2467)" strokeWidth="0.5" strokeMiterlimit="10" />
+        <defs>
+          <linearGradient id="paint0_linear_41_2467" x1="375.908" y1="-1.30622" x2="375.908" y2="751.445" gradientUnits="userSpaceOnUse">
+            <stop stopColor="#F4F4F4" />
+            <stop offset="0.08" stopColor="#F4F4F4" stopOpacity="0.96" />
+            <stop offset="0.22" stopColor="#F4F4F4" stopOpacity="0.84" />
+            <stop offset="0.4" stopColor="#F4F4F4" stopOpacity="0.65" />
+            <stop offset="0.62" stopColor="#F4F4F4" stopOpacity="0.39" />
+            <stop offset="0.86" stopColor="#F4F4F4" stopOpacity="0.07" />
+            <stop offset="0.91" stopColor="#F4F4F4" stopOpacity="0" />
+          </linearGradient>
+        </defs>
+      </svg>
+    )
+  })
+
+NicolasVector.displayName = 'NicolasVector'
 
 function NicoSymbol ({ className, ...props }: React.ComponentProps<'svg'>) {
   return (

@@ -1,11 +1,13 @@
+import { opacity, show } from '../lib/animations'
 import { Button } from './ui/button'
 import { ArrowDownIcon, FacebookIcon, LinkedInIcon } from './ui/icons'
+import { MotionDiv } from './ui/motion-div'
 
 function Description () {
   return (
     <div id='acerca-de' className="px-5 md:px-10 lg:px-[100px] xl:px-[200px] py-[100px] md:py-[200px]">
       <div className="flex flex-col gap-y-[40px] sm-2:gap-y-[60px]">
-        <div className="flex flex-col gap-y-5 sm-2:gap-y-10 text-base sm-2:text-[25px] text-protop-lavander">
+        <MotionDiv variants={opacity} className="flex flex-col gap-y-5 sm-2:gap-y-10 text-base sm-2:text-[25px] text-protop-lavander">
           <p className='leading-tight'>
             En mi rol como representante penal, me enorgullezco de encarnar los valores de honestidad, transparencia, dedicación, estudio, metodología y aplicación.
             {' '}
@@ -23,16 +25,16 @@ function Description () {
           <p className='leading-tight'>
             Un trato digno hacia la persona y sus seres queridos es esencial. Siempre estaré disponible para ofrecer información oportuna y apoyo constante en cada camino legal.
           </p>
-        </div>
-        <div className='flex flex-col items-center justify-center gap-y-[10px]'>
+        </MotionDiv>
+        <MotionDiv variants={opacity} transition={{ delay: 0.25 }} className='flex flex-col items-center justify-center gap-y-[10px]'>
           <ArrowDownIcon className="text-protop-light-blue animate-bounce" />
           <p className='text-protop-light-blue text-center [text-wrap:balance] text-base sm-2:text-[25px]'>
             Agenda tu primera consulta gratis y hablemos de tu caso
           </p>
-        </div>
+        </MotionDiv>
       </div>
 
-      <div className='mt-[60px] sm-2:mt-[100px] flex flex-col xl:flex-row gap-y-[50px] xl:gap-y-0'>
+      <MotionDiv variants={show} className='mt-[60px] sm-2:mt-[100px] flex flex-col xl:flex-row gap-y-[50px] xl:gap-y-0'>
         <div className='flex flex-col sm-2:flex-row items-center justify-center'>
           <p className='mb-5 sm-2:mb-0 text-center sm-2:text-end max-w-[262px]'>
             Obtén tips e información semanal acerca del derecho penal
@@ -61,7 +63,7 @@ function Description () {
             </span>
           </div>
         </div>
-      </div>
+      </MotionDiv>
     </div>
   )
 }

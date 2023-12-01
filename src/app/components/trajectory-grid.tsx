@@ -1,4 +1,6 @@
 import { BookOpenIcon } from './ui/icons'
+import { MotionDiv } from './ui/motion-div'
+import { opacity } from '../lib/animations'
 
 function TrajectoryGrid () {
   return (
@@ -22,9 +24,13 @@ function TrajectoryGrid () {
           </span>
         </p>
       </div>
-      <div className="row-start-1 sm-2:row-start-2 col-start-2 sm-2:col-start-1 bg-protop-space">
+      <MotionDiv variants={opacity} transition={{ delay: 0.25 }} className="row-start-1 sm-2:row-start-2 col-start-2 sm-2:col-start-1 bg-protop-space">
         <div className='flex flex-col justify-between h-full p-5 sm-2:p-6 md:p-8 lg:p-10'>
-          <h2 className="text-base mb-4 sm-2:mb-auto sm-2:text-lg md:text-xl lg:text-[25px]">Amplia trayectoria y en constante evolución.</h2>
+          <MotionDiv variants={opacity} transition={{ delay: 0.5 }}>
+            <h2 className="text-base mb-4 sm-2:mb-auto sm-2:text-lg md:text-xl lg:text-[25px]">
+              Amplia trayectoria y en constante evolución.
+            </h2>
+          </MotionDiv>
           <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
             <g clipPath="url(#clip0_77_5249)">
               <path d="M1 21L21 1" stroke="#0066FF" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
@@ -37,7 +43,7 @@ function TrajectoryGrid () {
             </defs>
           </svg>
         </div>
-      </div>
+      </MotionDiv>
       <div className="row-start-3 sm-2:row-start-2 col-start-1 sm-2:col-start-2 md:col-start-3 bg-[#C3CCE0] p-5 sm-2:p-6 md:p-8 lg:p-10 aspect-auto sm:aspect-square min-h-full">
         <BookOpenIcon className="text-protop-light-blue" />
         <p className='text-protop-space mt-5'>Magíster en derecho penal y constitucional en la{' '}
