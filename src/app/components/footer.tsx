@@ -2,7 +2,16 @@ import { Button } from './ui/button'
 import { FacebookIcon, InstagramIcon, LinkedInIcon } from './ui/icons'
 import { Layout } from './ui/layout-wrapper'
 
-function Footer () {
+type Props = {
+  entries: {
+    buttonInstagramLink: string
+    buttonLinkedInLink: string
+    buttonFacebookLink: string
+    buttonContactCopy: string
+  }
+}
+
+function Footer ({ entries }: Props) {
   return (
     <>
       <Layout>
@@ -37,17 +46,29 @@ function Footer () {
             <div className='flex flex-col items-center sm-2:items-start gap-y-[30px] sm-2:gap-y-0 sm-2:flex-row gap-x-[60px] text-center sm-2:text-start'>
               <ul className='flex gap-x-[30px]'>
                 <li className='group'>
-                  <a href="">
+                  <a
+                    href={entries.buttonInstagramLink}
+                    rel="noopener noreferrer"
+                    target="_blank"
+                  >
                     <InstagramIcon className='transition-colors group-hover:text-protop-light-blue' />
                   </a>
                 </li>
                 <li className='group'>
-                  <a href="">
+                  <a
+                    href={entries.buttonLinkedInLink}
+                    rel="noopener noreferrer"
+                    target="_blank"
+                  >
                     <LinkedInIcon className='transition-colors group-hover:text-protop-light-blue' />
                   </a>
                 </li>
                 <li className='group'>
-                  <a href="">
+                  <a
+                    href={entries.buttonFacebookLink}
+                    rel="noopener noreferrer"
+                    target="_blank"
+                  >
                     <FacebookIcon className='transition-colors group-hover:text-protop-light-blue' />
                   </a>
                 </li>
@@ -59,7 +80,7 @@ function Footer () {
                 los honorarios son de acuerdo a la causa. Se establecen en entrevista con cliente y se envía una cotización al a través de Whatsapp o correo electrónico. Se entrega boleta de honorarios.
               </p>
               <Button className='w-full sm-2:w-fit'>
-                Contáctame
+                {entries.buttonContactCopy}
               </Button>
             </div>
           </div>

@@ -8,20 +8,34 @@ import MarqueeMision from './components/marquee-mision'
 import MisionCards from './components/mision-cards'
 import Description from './components/description'
 import TrajectoryGrid from './components/trajectory-grid'
+import { getHomeEntries } from './contentful/service'
 
-export default function Home () {
+export default async function Home () {
+  const [
+    hero,
+    trajectory,
+    mision,
+    description,
+    services,
+    testimonials,
+    footer
+  ] = await getHomeEntries()
+
   return (
     <>
-      <Hero />
-      <TrajectoryGrid />
-      <MarqueeMision />
-      <MisionCards />
-      <Description />
-      <ServicesGrid />
-      <Contact />
-      <MarqueeTestimonials />
-      <Testimonials />
-      <Footer />
+      <Hero entries={hero} />
+      <TrajectoryGrid entries={trajectory} />
+      <MarqueeMision title={mision.carouselCopy} />
+      <MisionCards entries={mision} />
+      <Description entries={description} />
+      <ServicesGrid entries={services} />
+      <Contact
+        inbox={services.inbox}
+        phone={services.phone}
+      />
+      <MarqueeTestimonials title={testimonials.carouselCopy} />
+      <Testimonials entries={testimonials} />
+      <Footer entries={footer} />
     </>
   )
 }
