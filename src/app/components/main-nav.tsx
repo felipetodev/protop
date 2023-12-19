@@ -1,8 +1,10 @@
 'use client'
 
 import { useState } from 'react'
-import { Button } from './ui/button'
+import Link from 'next/link'
+import { buttonVariants } from './ui/button'
 import { AnimatePresence, motion } from 'framer-motion'
+import { cn } from '../lib/utils'
 
 function MainNav () {
   const [isOpen, setIsOpen] = useState(false)
@@ -18,9 +20,9 @@ function MainNav () {
     <>
       <nav className="sticky z-50 top-0 h-[100px] flex px-5 md:px-10 bg-nav-gradient">
         <div className='flex justify-between items-center w-full'>
-          <div>
+          <Link href='/'>
             <img src="nav-logo.svg" alt="Logo" />
-          </div>
+          </Link>
           <ul className="hidden lg:flex items-center gap-x-10">
             <li className='group'>
               <a href="#" className='transition-colors group-hover:text-protop-light-blue'>
@@ -45,9 +47,14 @@ function MainNav () {
           </ul>
         </div>
         <div className='flex justify-center items-center ml-10'>
-          <Button variant='thrid' className='hidden md:flex'>
+          <a
+            href='https://wa.me/+56957790219'
+            rel="noopener noreferrer"
+            target="_blank"
+            className={cn(buttonVariants({ variant: 'thrid' }), 'hidden md:flex')}
+          >
             Contáctame
-          </Button>
+          </a>
           {!isOpen
             ? (
               <button onClick={() => setIsOpen(!isOpen)} className='ml-10 lg:hidden'>
@@ -91,9 +98,14 @@ function MainNav () {
                   <a onClick={handleNavigation} href="#testimonios" className='transition-colors group-hover:text-protop-light-blue'>Testimonios</a>
                 </li>
                 <li>
-                  <Button variant='thrid' className='md:hidden'>
+                  <a
+                    href='https://wa.me/+56957790219'
+                    rel="noopener noreferrer"
+                    target="_blank"
+                    className={cn(buttonVariants({ variant: 'thrid' }), 'md:hidden')}
+                  >
                     Contáctame
-                  </Button>
+                  </a>
                 </li>
               </ul>
             </div>

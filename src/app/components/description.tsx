@@ -9,6 +9,8 @@ type Props = {
   entries: {
     description: string
     bookingCopy: string
+    bookingCopyLink: string
+    infoCopy: string
     buttonInstagramCopy: string
     buttonInstagramLink: string
     buttonLinkedInCopy: string
@@ -34,16 +36,21 @@ function Description ({ entries }: Props) {
         </MotionDiv>
         <MotionDiv variants={opacity} transition={{ delay: 0.25 }} className='flex flex-col items-center justify-center gap-y-[10px]'>
           <ArrowDownIcon className="text-protop-light-blue animate-bounce" />
-          <p className='text-protop-light-blue text-center [text-wrap:balance] text-base sm-2:text-[25px]'>
+          <a
+            rel="noopener noreferrer"
+            target="_blank"
+            href={entries.bookingCopyLink}
+            className='text-protop-light-blue text-center [text-wrap:balance] text-base sm-2:text-[25px] hover:underline'
+          >
             {entries.bookingCopy}
-          </p>
+          </a>
         </MotionDiv>
       </div>
 
       <MotionDiv variants={show} className='mt-[60px] sm-2:mt-[100px] flex flex-col xl:flex-row gap-y-[50px] xl:gap-y-0'>
         <div className='flex flex-col sm-2:flex-row items-center justify-center'>
           <p className='mb-5 sm-2:mb-0 text-center sm-2:text-end max-w-[262px]'>
-            Obtén tips e información semanal acerca del derecho penal
+            {entries.infoCopy}
           </p>
           <ArrowDownIcon className="hidden sm-2:flex text-protop-light-blue -rotate-90 mx-[30px]" />
           <a

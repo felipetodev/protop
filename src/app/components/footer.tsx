@@ -1,4 +1,5 @@
-import { Button } from './ui/button'
+import { cn } from '../lib/utils'
+import { buttonVariants } from './ui/button'
 import { FacebookIcon, InstagramIcon, LinkedInIcon } from './ui/icons'
 import { Layout } from './ui/layout-wrapper'
 
@@ -8,6 +9,7 @@ type Props = {
     buttonLinkedInLink: string
     buttonFacebookLink: string
     buttonContactCopy: string
+    buttonContactLink: string
   }
 }
 
@@ -79,9 +81,14 @@ function Footer ({ entries }: Props) {
                 </span>{' '}
                 los honorarios son de acuerdo a la causa. Se establecen en entrevista con cliente y se envía una cotización al a través de Whatsapp o correo electrónico. Se entrega boleta de honorarios.
               </p>
-              <Button className='w-full sm-2:w-fit'>
+              <a
+                rel="noopener noreferrer"
+                target="_blank"
+                href={entries.buttonContactLink}
+                className={cn(buttonVariants({}), 'w-full sm-2:w-fit')}
+              >
                 {entries.buttonContactCopy}
-              </Button>
+              </a>
             </div>
           </div>
         </footer>

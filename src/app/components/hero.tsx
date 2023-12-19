@@ -4,9 +4,9 @@ import { motion } from 'framer-motion'
 import { NicolasVector, PinIcon } from './ui/icons'
 import { Layout } from './ui/layout-wrapper'
 import { opacity, showUp } from '../lib/animations'
-import { Button as ButtonUI } from './ui/button'
+import { buttonVariants } from './ui/button'
+import { cn } from '../lib/utils'
 
-const Button = motion(ButtonUI)
 const Vector = motion(NicolasVector)
 
 type Props = {
@@ -14,6 +14,7 @@ type Props = {
     heroTitle: string
     heroDescription: string
     buttonCopy: string
+    buttonLink: string
     location: Array<{
       id: string
       cardTitle: string
@@ -72,15 +73,18 @@ function Hero ({ entries }: Props) {
             </li>
           ))}
         </motion.ul>
-        <Button
+        <motion.a
           initial='closed'
           animate='open'
           variants={showUp}
           transition={{ delay: 0.5, bounce: 0 }}
-          className='w-fit my-[30px]'
+          rel="noopener noreferrer"
+          target="_blank"
+          href={entries.buttonLink}
+          className={cn(buttonVariants({}), 'w-fit my-[30px]')}
         >
           {entries.buttonCopy}
-        </Button>
+        </motion.a>
       </div>
       <div className="relative flex justify-center sm-2:min-w-[500px]">
         {entries.image && (
