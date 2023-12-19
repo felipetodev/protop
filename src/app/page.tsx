@@ -10,6 +10,8 @@ import Description from './components/description'
 import TrajectoryGrid from './components/trajectory-grid'
 import { getHomeEntries } from './contentful/service'
 
+export const dynamic = 'force-dynamic'
+
 export default async function Home () {
   const [
     hero,

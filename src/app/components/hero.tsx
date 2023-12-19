@@ -18,6 +18,10 @@ type Props = {
       id: string
       cardTitle: string
     }>
+    image?: {
+      url: string
+      title: string
+    }
   }
 }
 
@@ -79,13 +83,17 @@ function Hero ({ entries }: Props) {
         </Button>
       </div>
       <div className="relative flex justify-center sm-2:min-w-[500px]">
-        <motion.img
-          initial='closed'
-          animate='open'
-          variants={showUp}
-          transition={{ delay: 0.5, bounce: 0 }}
-          className='block object-contain object-bottom' src="hero-lawyer.png" alt="lawyer-person"
-        />
+        {entries.image && (
+          <motion.img
+            initial='closed'
+            animate='open'
+            variants={showUp}
+            transition={{ delay: 0.5, bounce: 0 }}
+            className='block object-contain object-bottom'
+            src={entries.image.url}
+            alt={entries.image.title}
+          />
+        )}
         <Vector
           initial='closed'
           animate='open'
