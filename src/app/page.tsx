@@ -1,8 +1,8 @@
 import ServicesGrid from './components/services-grid'
 import Hero from './components/hero'
 import Contact from './components/contact'
-import MarqueeTestimonials from './components/marquee-testimonials'
-import Testimonials from './components/testimonials'
+// import MarqueeTestimonials from './components/marquee-testimonials'
+// import Testimonials from './components/testimonials'
 import Footer from './components/footer'
 import MarqueeMision from './components/marquee-mision'
 import MisionCards from './components/mision-cards'
@@ -19,7 +19,8 @@ export default async function Home () {
     mision,
     description,
     services,
-    testimonials,
+    // eslint-disable-next-line @typescript-eslint/no-unused-vars
+    _,
     footer
   ] = await getHomeEntries()
 
@@ -35,8 +36,8 @@ export default async function Home () {
         inbox={services.inbox}
         phone={services.phone}
       />
-      <MarqueeTestimonials title={testimonials.carouselCopy} />
-      <Testimonials entries={testimonials} />
+      {/* <MarqueeTestimonials title={testimonials.carouselCopy} />
+      <Testimonials entries={testimonials} /> */}
       <Footer entries={footer} />
     </>
   )

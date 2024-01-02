@@ -53,7 +53,7 @@ function MainNav () {
             target="_blank"
             className={cn(buttonVariants({ variant: 'thrid' }), 'hidden md:flex')}
           >
-            Contáctame
+            Contácteme
           </a>
           {!isOpen
             ? (
@@ -81,10 +81,10 @@ function MainNav () {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
-            className='fixed inset-0 h-screen w-full bg-protop-space z-40 lg:hidden'
+            className='fixed inset-0 min-h-[100svh] w-full bg-protop-space z-40 lg:hidden'
           >
             <div className='h-full'>
-              <ul className='grid gap-y-14 sm:gap-y-20 place-content-center pt-[100px] h-full text-center text-2xl sm:text-[45px]'>
+              <ul className='grid gap-y-14 sm:gap-y-16 place-content-center pt-[100px] h-full text-center [font-size:clamp(1.5rem,2vw+1rem,2.5rem)]'>
                 <li className='group'>
                   <a onClick={handleNavigation} href="#" className='transition-colors group-hover:text-protop-light-blue'>Inicio</a>
                 </li>
@@ -104,7 +104,7 @@ function MainNav () {
                     target="_blank"
                     className={cn(buttonVariants({ variant: 'thrid' }), 'md:hidden')}
                   >
-                    Contáctame
+                    Contácteme
                   </a>
                 </li>
               </ul>
