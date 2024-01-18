@@ -15,7 +15,7 @@ type Props = {
 
 function Testimonials ({ entries }: Props) {
   return (
-    <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 auto-rows-[390px] md:auto-rows-[405px] lg:auto-rows-[540px] xl:auto-rows-[375px] text-protop-space bg-protop-lavander overflow-hidden">
+    <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-[repeat(auto-fit,_minmax(450px,_1fr))] auto-rows-[390px] md:auto-rows-[405px] lg:auto-rows-[540px] xl:auto-rows-[375px] text-protop-space bg-protop-lavander overflow-hidden">
       {entries.cards.map((card, i) => {
         const isEven = i % 2 === 0
         return (
