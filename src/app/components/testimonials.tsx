@@ -9,6 +9,10 @@ type Props = {
       cardTitle: string
       cardOwner: string
       cardDescription: string
+      cardAvatar: {
+        url: string
+        title: string
+      }
     }>
   }
 }
@@ -30,15 +34,26 @@ function Testimonials ({ entries }: Props) {
             })}
           >
             <div className="flex space-x-2">
-              <div className="w-8 h-8 rounded-full bg-protop-space" />
-              <div className="flex flex-col gap-y-1">
+              {card?.cardAvatar
+                ? (
+                  <img
+                    src={card.cardAvatar.url}
+                    alt={card.cardAvatar.title}
+                    className="w-8 h-8 rounded-full"
+                  />
+                  )
+                : (
+                  <div className="w-8 h-8 rounded-full bg-protop-space" />
+                  )}
+              <div className={cn('flex flex-col', {
+                'gap-y-1': card?.cardOwner && card?.cardTitle,
+                'justify-center': !(card?.cardOwner && card?.cardTitle)
+              })}>
                 <h5 className="font-medium">{card.cardTitle}</h5>
                 <span className="font-normal">{card.cardOwner}</span>
               </div>
             </div>
-            <p className="mt-[30px]">
-              {card.cardDescription}
-            </p>
+            <p className="mt-[30px]" dangerouslySetInnerHTML={{ __html: card.cardDescription }} />
           </MotionDiv>
         )
       })}
