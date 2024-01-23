@@ -39,7 +39,7 @@ function Testimonials ({ entries }: Props) {
                   <img
                     src={card.cardAvatar.url}
                     alt={card.cardAvatar.title}
-                    className="w-8 h-8 rounded-full"
+                    className="w-8 h-8 rounded-full object-cover block"
                   />
                   )
                 : (
